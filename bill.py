@@ -15,4 +15,4 @@ else:
     bill = (100 * 5) + (100 * 8) + ((units - 200) * 10)
 
 # Display the total bill
-print(f"Total water bill: ₹{bill}")
+print(f"Total water bill: ₹{bill}") 
