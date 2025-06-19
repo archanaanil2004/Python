@@ -1,4 +1,5 @@
-count = 2
+count = 1
 while count <=10:
-    print (count)
-    count +=2
+    if count % 2==0:
+        print (count)
+    count +=1
