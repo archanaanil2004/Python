@@ -1,12 +1,9 @@
-num = int(input("Enter a number: "))
-count = 0
-temp = num
-
-if num == 0:
-    count = 1
-else:
-    while temp > 0:
-        count += 1
-        temp //= 10
-
-print("Number of digits:", count)
+i = int(input("Enter a number: "))
+j = 0
+a = i
+while a>0:
+    a=a//10
+    j=j+1
+if i==0:
+    j=1
+print("print number of digits:",j)
