@@ -1,6 +1,6 @@
-string="python loop"
-for s in string:    
+string="Python Loop"
+for s in string:
     if s=="o":
-        print("if block")
+        print("If block")
 else:
     print(s)
