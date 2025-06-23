@@ -1,3 +1,5 @@
-string=str(input("enter a string"))
-length=len(str(string))
-print(length)
+text=(input("enter a string"))
+reverse=""
+for i in range(len(text)):
+    reverse =text[i]+reverse
+print("reversed string:",reverse)
