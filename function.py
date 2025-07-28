@@ -184,3 +184,7 @@
 #     third=first+second
 #     print(third,end="")
 #     first,second=second,third
+
+
+#11.)lambda (also called anonymous function)
+#lambda_=lambda arg1,arg2:arg1+arg2
