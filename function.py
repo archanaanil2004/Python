@@ -188,3 +188,89 @@
 
 #11.)lambda (also called anonymous function)
 #lambda_=lambda arg1,arg2:arg1+arg2
+
+
+
+#11.)built  in function of a class(get attribute,set attribute,has attribute,delete attribute)
+
+# class Student:
+#     def __init__(self,name,id,age):
+#         self.name=name
+#         self.id=id
+#         self.age=age
+# s=Student("John",101,22)
+# print(getattr(s,'name'))
+# setattr(s,"aeg",23)
+# print(getattr(s,'age'))
+# print(hasattr(s,"id"))
+# delattr(s,'age')
+# print(s.age)//to add this print statement the output has error,avoid this statement output has no error
+
+#12.) INHERITENCE
+# 12.1)single inheritence(one base class and one derived class)
+# class Animal:
+#     def speak(self):
+#         print("Animal speaking")
+# //child class Dog inherits the base class Animal
+# class Dog(Animal):
+#     def bark(self):
+#         print("dog barking")
+# d=Dog()
+# d.bark()
+# d.speak() 
+
+
+# 12.2)Multilevel inheritence(one base class and multiple derived class)
+
+# class Animal:
+#     def speak(self):
+#         print("Animal speaking")
+# class Dog(Animal):
+#     def bark(self):
+#         print("dog barking")
+# class DogChild(Dog):
+#     def eat(self):
+#         print("eating bread...")
+# d=DogChild()
+# d.bark()
+# d.speak()
+# d.eat()
+
+
+# 12.3)Multiple inheritence(multiple base class and single derived class)
+
+# class Calculation1:
+#     def summation(self,a,b):
+#         return a+b
+# class Calculation2:
+#     def Multiplication(self,a,b):
+#         return a*b
+# class Derived(Calculation1,Calculation2):
+#     def Divide(self,a,b):
+#         return a/b
+# d=Derived()
+# print(d.summation(10,20))
+# print(d.Multiplication(10,20))
+# print(d.Divide(10,20))
+        
+
+# 12.4)Hierarchical inheritence(single parent class and  multiple derived class)
+
+# class Parent:
+#     def func1(self):
+#         print("this function is in parent class.")
+# class Child1(Parent):
+#     def func2(self):
+#         print("this function is in child1.")
+# class Child2(Parent):
+#     def func3(self):
+#         print("this function is in child2.")
+# d=Child1()
+# d.func1()
+# d.func2()
+# d=Child2()
+# d.func1()
+# d.func3()
+
+# 13)POLYMORPHISM(it is the ability to take morethan one form)
+
