@@ -61,7 +61,7 @@
 # d.speak() 
 
 
-# 4.2)Multilevel inheritence(one base class and multiple derived class)
+# 4.2)Multilevel inheritence(one base class and multiple derived class,one derived class inherts another direved class)
 
 # class Animal:
 #     def speak(self):
@@ -113,7 +113,7 @@
 # d.func1()
 # d.func3()
 
-# 4.5)HYBRID INHERITENCE 
+# 4.5)HYBRID INHERITENCE (use morethan one inheritence in a single program)
 
 # class Animal:
 #     def speak(self):
@@ -151,3 +151,53 @@
 # print("SBI rate of interset",b2.getroi());
 # print(" ICICI rate of interset",b3.getroi());
 
+# 6.)ENCAPSULATION(wrapping up of data is called encapsulation)
+# 6.1)protected member
+
+# class Base: 
+# 	def __init__(self): 	
+# 		self._a = 2
+# class Derived(Base): 
+# 	def __init__(self): 		
+# 		Base.__init__(self) 
+# 		print("Calling protected member of base class: ", self._a)  
+# 		self._a = 3
+# 		print("Calling modified protected member outside class: ", self._a) 
+# obj1 = Derived() 
+# obj2 = Base() 
+# print("Accessing protected member of obj1: ", obj1._a) 
+# print("Accessing protected member of obj2: ", obj2._a) 
+
+# 6.2)private member
+
+# class Base: 
+#     def __init__(self): 
+#         self.a = "Hello"
+#         self.__c = "World" 
+# class Derived(Base): 
+#     def __init__(self):  
+#         Base.__init__(self) 
+#         print("Calling private member of base class: ") 
+#         print(self.__c) 
+# obj1 = Base() 
+# print(obj1.a) 
+
+
+
+# 7.)DATA ABSTACTION()
+
+# from abc import ABC, abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def make_sound(self):
+#         pass
+# class Dog(Animal):
+#     def make_sound(self):
+#         return "Woof!"
+# class Cat(Animal):
+#     def make_sound(self):
+#         return "Meow!"
+# dog = Dog()
+# cat = Cat()
+# print(dog.make_sound())
+# print(cat.make_sound())
